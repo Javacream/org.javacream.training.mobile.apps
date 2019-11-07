@@ -7,4 +7,6 @@
     <string name="buttonReset">Clear</string>
     <string name="labelFirstname">Firstname:</string>
     <string name="caption">P E O P L E</string>
+    <string name="buttonShowLog">Show Log</string>
+    <string name="back">Back</string>
 </resources>
