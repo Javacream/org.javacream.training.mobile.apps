@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">People App</string>
+    <string name="labelLastname">Lastname:</string>
+    <string name="labelGender">Gender:</string>
+    <string name="labelHeight">Height:</string>
+    <string name="buttonSave">Save</string>
+    <string name="buttonReset">Clear</string>
+    <string name="labelFirstname">Firstname:</string>
+    <string name="caption">P E O P L E</string>
+</resources>
