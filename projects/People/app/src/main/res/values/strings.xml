@@ -9,7 +9,7 @@
     <string name="caption">P E O P L E</string>
     <string name="buttonShowLog">Show Log</string>
     <string name="back">Back</string>
-    <string name="gotoPersonInput">Person Input Usual Navigation</string>
-    <string name="gotoPersonDemoInput">Person Input Unusual Navigation</string>
+    <string name="gotoPersonInput">Person Input</string>
+    <string name="gotoPersonDemoInput">Person Demo Input</string>
     <string name="gotoPeopleList">People List</string>
 </resources>
