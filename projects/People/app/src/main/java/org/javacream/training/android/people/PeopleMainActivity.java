@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,24 +19,46 @@ public class PeopleMainActivity extends AppCompatActivity {
     private EditText heightInput;
     private LinearLayout logView;
     private Button saveButton;
+    private View inputView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.i("Lifecycle", "onCreate");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.person_input);
+        inputView = getLayoutInflater().inflate(R.layout.person_input, null);
         logView = (LinearLayout) getLayoutInflater().inflate(R.layout.log_layout, null);
         logView.setOrientation(LinearLayout.VERTICAL);
+        setContentView(inputView);
         retrieveFields();
+        checkSaveButtonActive();
     }
 
     private void retrieveFields(){
+        View.OnKeyListener onKeyListener = new View.OnKeyListener(){
+
+            @Override
+            public boolean onKey(View view, int i, KeyEvent keyEvent) {
+                checkSaveButtonActive();
+                return false;
+            }
+
+        };
         lastnameInput  = this.findViewById(R.id.lastnameInput);
         firstnameInput  = this.findViewById(R.id.firstnameInput);
         genderInput  = this.findViewById(R.id.genderInput);
         heightInput  = this.findViewById(R.id.heightInput);
-        lastnameInput.setText("HELLO FROM ACTIVITY");
         saveButton = findViewById(R.id.saveButton);
+        lastnameInput.setText("HELLO FROM ACTIVITY");
+        lastnameInput.setOnKeyListener(onKeyListener);
+        firstnameInput.setOnKeyListener(onKeyListener);
+        heightInput.setOnKeyListener(onKeyListener);
+        genderInput.setOnKeyListener(onKeyListener);
+    }
+
+
+    private void checkSaveButtonActive(){
+        boolean isSaveButtonActive = ((lastnameInput.getText().length() > 0)&&(firstnameInput.getText().length() > 0)&&(genderInput.getText().length() > 0)&&(heightInput.getText().length() > 0));
+        saveButton.setEnabled(isSaveButtonActive);
     }
     @Override
     protected void onStart() {
@@ -56,7 +79,6 @@ public class PeopleMainActivity extends AppCompatActivity {
     }
 
     public void doSave(View view){
-        //Beliebige Code-Sequenz
         Log.i("Action", "called doSave");
         String lastname = lastnameInput.getText().toString();
         String firstname = firstnameInput.getText().toString();
@@ -72,18 +94,17 @@ public class PeopleMainActivity extends AppCompatActivity {
         logView.addView(textView);
     }
     public void doClear(View view){
-        //Beliebige Code-Sequenz
         Log.i("Action", "called doClear");
         lastnameInput.setText("");
         firstnameInput.setText("");
         genderInput.setText("");
         heightInput.setText("");
+        checkSaveButtonActive();
     }
     public void doShowLog(View view){
         setContentView(logView);
     }
     public void doShowPersonInput(View view){
-        setContentView(R.layout.person_input);
-        retrieveFields();
+        setContentView(inputView);
     }
 }
