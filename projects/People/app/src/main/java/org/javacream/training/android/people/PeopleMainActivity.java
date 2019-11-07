@@ -22,4 +22,10 @@ public class PeopleMainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, PersonInputUnusualNavigationActivity.class);
         this.startActivity(intent);
     }
+
+    public void doNavigationToPeopleList(View view) {
+        Intent intent = new Intent(this, PeopleListActivity.class);
+        this.startActivity(intent);
+
+    }
 }

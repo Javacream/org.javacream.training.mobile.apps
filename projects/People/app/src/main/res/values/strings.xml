@@ -11,4 +11,5 @@
     <string name="back">Back</string>
     <string name="gotoPersonInput">Person Input Usual Navigation</string>
     <string name="gotoPersonDemoInput">Person Input Unusual Navigation</string>
+    <string name="gotoPeopleList">People List</string>
 </resources>

@@ -12,6 +12,10 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import org.javacream.training.android.people.model.MapPeopleModel;
+import org.javacream.training.android.people.model.PeopleModel;
+import org.javacream.training.android.people.model.Person;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +26,7 @@ public class PersonInputActivity extends AppCompatActivity {
     private EditText heightInput;
     private Button saveButton;
     private ArrayList<String> messages;
-
+    private PeopleModel peopleModel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +34,7 @@ public class PersonInputActivity extends AppCompatActivity {
         createFields();
         checkSaveButtonActive();
         messages = new ArrayList<>();
+        peopleModel = PeopleApplicationContext.peopleModel();
     }
 
     private void createFields(){
@@ -66,7 +71,8 @@ public class PersonInputActivity extends AppCompatActivity {
         String firstname = firstnameInput.getText().toString();
         String gender = genderInput.getText().toString();
         String height = heightInput.getText().toString();
-        String message = "saving lastname=" + lastname + ", firstname=" + firstname + ", height=" + height + ", gender=" + gender;
+        Person created = peopleModel.create(lastname, firstname, gender.charAt(0), Integer.parseInt(height));
+        String message = "saving lastname=" + created.toString();
         messages.add(message);
     }
     public void doClear(View view){
