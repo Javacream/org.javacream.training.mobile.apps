@@ -12,4 +12,6 @@
     <string name="gotoPersonInput">Person Input</string>
     <string name="gotoPersonDemoInput">Person Demo Input</string>
     <string name="gotoPeopleList">People List</string>
+    <string name="gotoDeletePerson">Delete Person</string>
+    <string name="deletePersonButton">Delete</string>
 </resources>

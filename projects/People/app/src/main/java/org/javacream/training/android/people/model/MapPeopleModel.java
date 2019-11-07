@@ -30,6 +30,11 @@ public class MapPeopleModel implements PeopleModel {
     public Person create(String lastname, String firstname, Character gender, Integer height){
         Person person = new Person(counter++, lastname, firstname, gender, height);
         people.put(person.getId(), person);
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return person;
     }
 
