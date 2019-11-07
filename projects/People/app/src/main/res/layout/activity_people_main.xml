@@ -4,19 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".PeopleMainActivity">
 
-    <Button
-        android:id="@+id/buttonGotoPersonInput"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="doNavigationToPersonInput"
-        android:text="@string/gotoPersonInput" />
-    <Button
-        android:id="@+id/buttonGotoPeopleList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="doNavigationToPeopleList"
-        android:text="@string/gotoPeopleList" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonGotoPeopleList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="doNavigationToPeopleList"
+            android:text="@string/gotoPeopleList" />
+
+        <Button
+            android:id="@+id/buttonGotoPersonInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="doNavigationToPersonInput"
+            android:text="@string/gotoPersonInput" />
+        <Button
+            android:id="@+id/buttonGotoDeletePerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="doNavigationToDeletePerson"
+            android:text="@string/gotoDeletePerson" />
+    </LinearLayout>
+
 
 </LinearLayout>
