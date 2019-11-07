@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".PeopleMainActivity"
     android:orientation="vertical"
-    tools:context=".PeopleMainActivity">
+    >
 
     <Button
         android:id="@+id/buttonGotoPersonInput"
@@ -19,5 +20,11 @@
         android:layout_height="wrap_content"
         android:onClick="doNavigationToPersonDemoInput"
         android:text="@string/gotoPersonDemoInput" />
+    <Button
+        android:id="@+id/buttonGotoPeopleList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doNavigationToPeopleList"
+        android:text="@string/gotoPeopleList" />
 
 </LinearLayout>

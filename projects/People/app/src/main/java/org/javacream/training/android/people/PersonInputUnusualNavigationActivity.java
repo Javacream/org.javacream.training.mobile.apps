@@ -55,7 +55,7 @@ public class PersonInputUnusualNavigationActivity extends AppCompatActivity {
         genderInput  = this.findViewById(R.id.genderInput);
         heightInput  = this.findViewById(R.id.heightInput);
         saveButton = findViewById(R.id.saveButton);
-        lastnameInput.setText("HELLO FROM DEMO ACTIVITY");
+        lastnameInput.setText("HELLO FROM ACTIVITY");
         lastnameInput.setOnKeyListener(onKeyListener);
         firstnameInput.setOnKeyListener(onKeyListener);
         heightInput.setOnKeyListener(onKeyListener);
