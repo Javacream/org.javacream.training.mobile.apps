@@ -3,8 +3,8 @@ package org.javacream.training.android.people;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,30 +13,41 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import org.javacream.training.android.people.controller.DeletePersonController;
-import org.javacream.training.android.people.model.PeopleModel;
+import org.javacream.training.android.people.controller.ListPeopleController;
 import org.javacream.training.android.people.model.Person;
 
 import java.util.List;
 
-public class PeopleListActivity extends AppCompatActivity implements DeletePersonController.UpdateCallback {
-    private PeopleModel peopleModel;
+public class PeopleListActivity extends AppCompatActivity implements DeletePersonController.UpdateCallback, ListPeopleController.UpdateCallback {
+    private ListPeopleController listPeopleController;
     private PeopleArrayAdapter peopleArrayAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_people_list);
-        peopleModel = PeopleApplicationContext.peopleModel();
-        Log.i("DETAIL", peopleModel.findAll().toString());
-        List<Person> peopleList = peopleModel.findAll();
-        peopleArrayAdapter = new PeopleArrayAdapter(this, peopleList);
         ListView peopleListView = findViewById(R.id.peopleListView);
         peopleListView.setAdapter(peopleArrayAdapter);
+        Intent intent = getIntent();
+        List<Person> people = (List<Person>) intent.getSerializableExtra("people");
+        if (people == null) {
+            listPeopleController = PeopleApplicationContext.listPeopleController();
+            listPeopleController.listPeople(this);
+        }
+        else{
+            updateListPeople(people);
+        }
     }
 
     @Override
     public void updateDeletePerson() {
         peopleArrayAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void updateListPeople(List<Person> people){
+        peopleArrayAdapter = new PeopleArrayAdapter(this, people);
+        ((ListView)findViewById(R.id.peopleListView)).setAdapter(peopleArrayAdapter);
     }
 
     public class PeopleArrayAdapter extends ArrayAdapter<Person> {
