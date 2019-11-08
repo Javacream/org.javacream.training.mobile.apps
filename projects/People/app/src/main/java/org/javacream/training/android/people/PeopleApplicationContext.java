@@ -3,12 +3,12 @@ package org.javacream.training.android.people;
 import org.javacream.training.android.people.controller.CreatePersonController;
 import org.javacream.training.android.people.controller.DeletePersonController;
 import org.javacream.training.android.people.controller.ListPeopleController;
-import org.javacream.training.android.people.model.MapPeopleModel;
 import org.javacream.training.android.people.model.PeopleModel;
+import org.javacream.training.android.people.model.ServerPeopleModel;
 
 public class PeopleApplicationContext {
 
-    private static MapPeopleModel peopleModel;
+    private static ServerPeopleModel peopleModel;
 
     public static CreatePersonController createPersonController() {
         return createPersonController;
@@ -26,7 +26,7 @@ public class PeopleApplicationContext {
 
     static{
         //Objekte parameterlos erzeugen
-        peopleModel = new MapPeopleModel();
+        peopleModel = new ServerPeopleModel();
         createPersonController = new CreatePersonController();
         deletePersonController = new DeletePersonController();
         listPeopleController = new ListPeopleController();
