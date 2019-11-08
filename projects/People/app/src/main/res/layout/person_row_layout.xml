@@ -16,4 +16,11 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="TextView" />
+    <ImageButton
+        android:id="@+id/deletePersonButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@android:drawable/btn_minus">
+    </ImageButton>
 </LinearLayout>
