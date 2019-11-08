@@ -14,4 +14,5 @@
     <string name="gotoPeopleList">People List</string>
     <string name="gotoDeletePerson">Delete Person</string>
     <string name="deletePersonButton">Delete</string>
+    <string name="gotoJsonListFromServer">JSON List</string>
 </resources>
