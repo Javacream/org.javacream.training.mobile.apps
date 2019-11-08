@@ -29,4 +29,9 @@ public class PeopleMainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DeletePersonActivity.class);
         this.startActivity(intent);
     }
+
+    public void doNavigationJsonListFromServer(View view) {
+        Intent intent = new Intent(this, PeopleWebListActivity.class);
+        this.startActivity(intent);
+    }
 }
