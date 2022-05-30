@@ -1,4 +1,4 @@
-# org.javacream.training.mobile.apps#
+# org.javacream.training.mobile.apps
 
 ## Organisatorisches
 
@@ -14,7 +14,9 @@
 
 * Beispiele
   * https://github.com/Javacream/org.javacream.training.mobile.apps
-    * Branch Integrata_30.5.2022
+  * https://github.com/Javacream/org.javacream.training.android
+  * https://github.com/Javacream/org.javacream.training.swift
+    * jeweils Branch Integrata_30.5.2022
 
 * Digitales Flipchart
   * https://docs.google.com/presentation/d/10BFVggq-HVvCy4e2Pk1BDKGYKJ79CRBRSiuVECgDigo/edit?usp=sharing
