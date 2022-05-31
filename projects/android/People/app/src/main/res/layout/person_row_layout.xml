@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="9"
+    >
+
+    <TextView
+        android:id="@+id/firstnameInRow"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:layout_gravity="left"
+        android:text="TextView"  android:layout_width="0dp"/>
+
+    <TextView
+        android:id="@+id/lastnameInRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:layout_gravity="left"
+        android:text="TextView" />
+
+    <ImageButton
+        android:id="@+id/deletePersonButton"
+        android:layout_width="0dp"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_weight="1"
+        android:foreground="@android:drawable/btn_minus"></ImageButton>
+</LinearLayout>

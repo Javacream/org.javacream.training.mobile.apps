@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ServiceDemo</string>
+    <string name="activity1">I am activity 1</string>
+    <string name="activity2">I am activity 2</string>
+    <string name="activity3">I am activity 3</string>
+    <string name="startService">start Service</string>
+
+</resources>

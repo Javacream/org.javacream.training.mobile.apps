@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Resources</string>
+    <string name="showThreadingUi">Threading Ui</string>
+    <string name="blockingLongRunningAction">Blocking</string>
+    <string name="wrongThreadingLongRunningAction">Wrong Threading</string>
+    <string name="asyncLongRunningAction">Async</string>
+    <string name="showPreferenceButton">Show preference</string>
+    <string name="incrementPreferenceButton">Increment preference</string>
+    <string name="showEncryptedPreferenceButton">Show encrypted</string>
+    <string name="showDecryptedPreferenceButton">Show decrypted</string>
+    <string name="showProgressDialog">Show Progress Dialog</string>
+    <string name="writeFile">Write File</string>
+    <string name="readFile">Read File</string>
+    <string name="showEncryptedPreferencesUi">Crypt</string>
+    <string name="showPreferencesUi">Preferences</string>
+    <string name="showFileIoUi">File IO</string>
+    <string name="showDbUi">DB Ui</string>
+    <string name="dbExecuteStatement">Execute Statement</string>
+    <string name="prepareDbButton">Prepare Database</string>
+    <string name="dbErrorPrefix">DB Error </string>
+    <string name="callServiceButton">Call Serialization Service</string>
+        
+</resources>

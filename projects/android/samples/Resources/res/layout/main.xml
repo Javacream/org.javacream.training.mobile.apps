@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/preferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/showPreferencesUi" 
+        android:onClick="showPreferencesUi"
+        />
+    <Button
+        android:id="@+id/encryptedPreferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/showEncryptedPreferencesUi" 
+        android:onClick="showEncryptedPreferencesUi"
+        />
+    <Button
+        android:id="@+id/showThreading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/showThreadingUi" 
+        android:onClick="showThreadingUi"
+        />
+    <Button
+        android:id="@+id/fileIo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/showFileIoUi" 
+        android:onClick="showFileIoUi"
+        />
+    <Button
+        android:id="@+id/db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/showDbUi" 
+        android:onClick="showDbUi"
+        />
+    <Button
+        android:id="@+id/http"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/httpAccessButton" 
+        android:onClick="showHttpAccessUi"
+        />
+    <Button
+        android:id="@+id/service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/callServiceButton" 
+        android:onClick="callSerializationService"
+        />
+    
+</LinearLayout>

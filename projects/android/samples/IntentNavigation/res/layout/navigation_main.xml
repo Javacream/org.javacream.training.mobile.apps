@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/intentUrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textUri" />
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1" >
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/ActionPick"
+                android:text="@string/pick" />
+
+            <RadioButton
+                android:id="@+id/ActionEdit"
+                android:text="@string/edit" />
+
+            <RadioButton
+                android:id="@+id/ActionView"
+                android:checked="true"
+                android:text="@string/view" />
+            <RadioButton
+                android:id="@+id/FreeAction"
+                android:checked="false"
+                android:text="@string/freeAction" />
+            </RadioGroup>
+
+        <EditText
+            android:id="@+id/freeActionInputText"
+            android:inputType="text" 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/defaultFreeAction" 
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/Sync"
+                android:text="@string/withResult" />
+
+            <RadioButton
+                android:id="@+id/Async"
+                android:checked="true"
+                android:text="@string/async" />
+            </RadioGroup>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/navigationButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/navigationButtonCaption" />
+
+</LinearLayout>

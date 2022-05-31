@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenServices">
+    <service-url>http://localhost:8081/repository/maven-public/</service-url>
+  </component>
+</project>
