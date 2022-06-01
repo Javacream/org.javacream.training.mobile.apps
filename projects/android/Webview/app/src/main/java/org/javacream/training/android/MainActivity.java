@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("http://h2908727.stratoserver.net:8080/swagger-ui.html");
+        webView.loadUrl("https://github.com/Javacream/org.javacream.training.mobile.apps");
     }
 
 

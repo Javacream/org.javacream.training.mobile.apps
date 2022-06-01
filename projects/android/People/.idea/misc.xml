@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_delete_person.xml" value="0.11574074074074074" />
         <entry key="app/src/main/res/layout/activity_people_list.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_people_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/person_input.xml" value="0.1" />

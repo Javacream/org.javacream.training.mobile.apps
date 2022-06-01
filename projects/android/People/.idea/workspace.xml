@@ -40,7 +40,7 @@
     </option>
   </component>
   <component name="GenerateSignedApkSettings">
-    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/../../../android.keystore" />
+    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/../../../../android.keystore" />
     <option name="KEY_ALIAS" value="key0" />
     <option name="REMEMBER_PASSWORDS" value="true" />
     <option name="BUILD_TARGET_KEY" value="apk" />
@@ -166,7 +166,7 @@
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../tools/Android/Sdk" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="device.picker.selection" value="Pixel_2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Webview" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../android.keystore" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager" selected="Android App.PeopleMainActivity">
